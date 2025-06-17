@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
+*{
+  box-sizing: border-box;
+}
+
+
 @font-face {
   font-family: font1;
   src: url("../src/assets/font1.woff2");
 }
+
