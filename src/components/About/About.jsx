@@ -1,12 +1,12 @@
 import React from 'react'
 import minku from "../../assets/MINKU.jpg"
-import polygon from "../../assets/polygon.png"
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
+import SkillsCard from '../Card/SkillsCard';
 const About = () => {
   return (
     <div id='about' className='w-full h-full bg-[#ffffff] font-[font1]'>
@@ -33,38 +33,17 @@ const About = () => {
 
           <div className="Skills-section mt-4 text-center text-2xl font-[600]">
             <h2>SKILLS</h2>
-            <ul className='grid grid-cols-3 gap-15 ml-35 mt-10'>
-              <li className='relative'>
-                <img src={polygon} className='h-23'/>
-                <FaReact className='absolute text-6xl left-4 top-4' />
-              </li>
-              <li className='relative'>
-                <img src={polygon} className='h-23'/>
-                <TbBrandJavascript className='absolute text-6xl left-4 top-5' />
-              </li>
-              <li className='relative'>
-                <img src={polygon} className='h-23'/>
-                <RiTailwindCssFill className='absolute text-6xl left-4 top-4' />
-              </li>
-              <li className='relative'>
-                <img src={polygon} className='h-23'/>
-                <FaGithub className='absolute text-6xl left-4 top-4' />
-              </li>
-              <li className='relative'>
-                <img src={polygon} className='h-23'/>
-                <FaCss3Alt className='absolute text-6xl left-4 top-5' />
-              </li>
-              <li className='relative'>
-                <img src={polygon} className='h-23'/>
-                <FaHtml5 className='absolute text-6xl left-4 top-5' />
-              </li>
-              
-              
-              
-              
-              
-              
-            </ul>
+            <div className="absolute left-[65.5%] w-[7.1rem] h-[1px] bg-[#e5e5e5] mt-3">
+          <span className="h-1 w-10 absolute bg-[#0563bb] left-[33%] -mt-[1.2px]"></span>
+        </div>
+        <div className="mt-14 ml-23 grid grid-cols-3 gap-6">
+        <SkillsCard skillImage={<FaReact/>} skillName="REACT"/>
+        <SkillsCard skillImage={<TbBrandJavascript/>} skillName="JavaScript"/>
+        <SkillsCard skillImage={<RiTailwindCssFill/>} skillName="Tailwind CSS"/>
+        <SkillsCard skillImage={<FaGithub/>} skillName="GitHub"/>
+        <SkillsCard skillImage={<FaCss3Alt/>} skillName="CSS"/>
+        <SkillsCard skillImage={<FaHtml5/>} skillName="HTML"/>
+        </div>
           </div>
 
           </div>
