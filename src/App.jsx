@@ -5,11 +5,13 @@ import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 
+
+
 const App = () => {
   return (
     <>
       <Home />
-      {/* <About /> */}
+      <About />
       <Projects />
       <Contact />
       <Footer />
