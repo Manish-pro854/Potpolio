@@ -16,11 +16,16 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
   return (
-    <div id="home" className="h-screen bg-white">
-      <div className="relative h-full w-full bg-[url(https://wallpapercave.com/wp/wp9517084.jpg)] bg-cover opacity-[0.2]"></div>
+    <div id="home" className="h-screen w-full">
 
-      <div className="absolute top-42 pl-4 flex justify-center items-start gap-28">
-        <div id="left-side" className="desktopmenu">
+      <div className="relative h-full w-full bg-[url(https://wallpapercave.com/wp/wp9517084.jpg)] bg-cover opacity-[0.2]">
+      </div>
+
+      <div className="absolute top-[0%] md:top-[25%] flex md:gap-45 h-full w-full">
+
+
+        <div id="left-side" className="desktopmenu z-10 hidden md:block ml-4">
+
           <ul className="flex flex-col gap-2 items-center justify-center fixed">
             <Link
               to="home"
@@ -29,7 +34,7 @@ const Home = () => {
               activeClass="active"
               spy={true}
             >
-              <li className="text-[1.5vw] p-[1.45vw] rounded-full text-#566068 bg-sky-100 cursor-pointer">
+              <li className="text-[1.5rem] p-[1.2rem] rounded-full text-#566068 bg-sky-100 cursor-pointer">
                 <TiHomeOutline />
               </li>
             </Link>
@@ -40,7 +45,7 @@ const Home = () => {
               activeClass="active"
               spy={true}
             >
-              <li className="text-[1.5vw] p-[1.45vw] rounded-full text-#566068 bg-sky-100 cursor-pointer">
+              <li className="text-[1.5rem] p-[1.2rem] rounded-full text-#566068 bg-sky-100 cursor-pointer">
                 <FiUser />
               </li>
             </Link>
@@ -51,7 +56,7 @@ const Home = () => {
               activeClass="active"
               spy={true}
             >
-              <li className="text-[1.5vw] p-[1.45vw] rounded-full text-#566068 bg-sky-100 cursor-pointer">
+              <li className="text-[1.5rem] p-[1.2rem] rounded-full text-#566068 bg-sky-100 cursor-pointer">
                 <GoProjectSymlink />
               </li>
             </Link>
@@ -62,7 +67,7 @@ const Home = () => {
               activeClass="active"
               spy={true}
             >
-              <li className="text-[1.5vw] p-[1.45vw] rounded-full text-#566068 bg-sky-100 cursor-pointer">
+              <li className="text-[1.5rem] p-[1.2rem] rounded-full text-#566068 bg-sky-100 cursor-pointer">
                 <LuMessageSquareText />
               </li>
             </Link>
@@ -130,16 +135,14 @@ const Home = () => {
         </div> */}
 
 
-
-
-        <div id="right-side" className="-mt-9 ml-10">
-          <h2 className="text-[5vw] font-[font1] font-[800] text-[#46505a]">
+        <div id="right-side" className="h-full w-full flex flex-col items-center justify-center text-center md:items-start md:-mt-[31vh]">
+          <h2 className="text-[3.9rem] font-[font1] font-[800] text-[#46505a]">
             Manish
           </h2>
-          <h4 className="text-[2vw] font-[font1] font-[500] text-[#46505a] mb-3">
+          <h4 className="text-[1.5rem] font-[font1] font-[500] text-[#46505a] mb-3">
             Frontend-focused || CSE Student
           </h4>
-          <h3 className="text-[2.2vw] font-[font1] font-[500] text-[#46505a] mb-6">
+          <h3 className="text-[1.8rem] font-[font1] font-[500] text-[#46505a] mb-6">
             I'm <span className="text-blue-700">
                <Typewriter
               words={["React Developer","JavaScript Enthusiast","Frontend Developer"]}
@@ -153,25 +156,27 @@ const Home = () => {
             </span>
           </h3>
           <ul className="flex gap-5 mb-6">
-            <li className="text-[2vw] bg-transparent text-[#45505a]">
+            <li className="text-[2rem] bg-transparent text-[#45505a]">
               <IoLogoLinkedin />
             </li>
-            <li className="text-[2vw] bg-transparent text-[#45505a]">
+            <li className="text-[2rem] bg-transparent text-[#45505a]">
               <FaTwitter />
             </li>
-            <li className="text-[2vw] bg-transparent text-[#45505a]">
+            <li className="text-[2rem] bg-transparent text-[#45505a]">
               <FaInstagram />
             </li>
-            <li className="text-[2vw] bg-transparent text-[#45505a]">
+            <li className="text-[2rem] bg-transparent text-[#45505a]">
               <FaGithub />
             </li>
           </ul>
-          <button className="flex justify-center items-center gap-1 text-[1.7vw] text-white py-2 px-4 bg-[#0d6efd] rounded-lg">
-            <IoSearch className="text-[1.9vw]" />
+          <button className="flex justify-center items-center gap-1 text-[1.5rem] text-white py-2 px-4 bg-[#0d6efd] rounded-lg outline-0">
+            <IoSearch className="text-[1.7rem]" />
             View Resume
           </button>
         </div>
-      </div>
+
+        </div>
+
     </div>
   );
 };
