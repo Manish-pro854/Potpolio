@@ -137,7 +137,7 @@ const Home = () => {
         </div> */}
 
 
-        <div id="right-side" className="h-full w-full flex flex-col items-center justify-center text-center md:items-start md:-mt-48">
+        <div id="right-side" className="h-full w-full flex flex-col items-center justify-center text-center md:items-start md:-mt-48 lg:-mt-40">
           <h2 className="text-[3.9rem] font-[font1] font-[800] text-[#46505a]">
             Manish
           </h2>
