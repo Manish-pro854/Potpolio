@@ -25,7 +25,7 @@ const Navbar = () => {
         id="left-side"
         className="desktopmenu z-10 hidden md:block ml-4 pt-5"
       >
-        <ul className="flex flex-col gap-2 items-center justify-center fixed">
+        <ul className="flex flex-col gap-2 items-start justify-center fixed">
           <Link
             to="home"
             smooth={true}
@@ -33,9 +33,13 @@ const Navbar = () => {
             activeClass="active"
             spy={true}
           >
-            <li className="text-[1.5rem] cursor-pointer">
-              <h1 className="p-[1.2rem] rounded-full text-#566068 bg-sky-100"><TiHomeOutline /></h1>
-              
+            <li className="group cursor-pointer">
+              <h1 className="flex items-center bg-sky-100 text-[#566068] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
+                <TiHomeOutline className="text-xl flex-shrink-0 ml-[0.2rem]" />
+                <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Home
+                </span>
+              </h1>
             </li>
           </Link>
           <Link
@@ -45,10 +49,15 @@ const Navbar = () => {
             activeClass="active"
             spy={true}
           >
-            <li className="text-[1.5rem] cursor-pointer">
-              <h1 className="p-[1.2rem] rounded-full text-#566068 bg-sky-100"><FiUser /></h1>
-              
+            <li className="group cursor-pointer">
+              <h1 className="flex items-center bg-sky-100 text-[#566068] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
+                <FiUser className="text-xl flex-shrink-0 ml-[0.2rem]" />
+                <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  About
+                </span>
+              </h1>
             </li>
+           
           </Link>
           <Link
             to="projects"
@@ -57,9 +66,13 @@ const Navbar = () => {
             activeClass="active"
             spy={true}
           >
-            <li className="text-[1.5rem] cursor-pointer">
-              <h1 className="p-[1.2rem] rounded-full text-#566068 bg-sky-100"><GoProjectSymlink /></h1>
-              
+            <li className="group cursor-pointer">
+              <h1 className="flex items-center bg-sky-100 text-[#566068] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
+                <GoProjectSymlink className="text-xl flex-shrink-0 ml-[0.2rem]" />
+                <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Projects
+                </span>
+              </h1>
             </li>
           </Link>
           <Link
@@ -69,9 +82,13 @@ const Navbar = () => {
             activeClass="active"
             spy={true}
           >
-            <li className="text-[1.5rem] cursor-pointer">
-              <h1 className="p-[1.2rem] rounded-full text-#566068 bg-sky-100"><LuMessageSquareText /></h1>
-              
+            <li className="group cursor-pointer">
+              <h1 className="flex items-center bg-sky-100 text-[#566068] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.3rem] transition-all duration-300 overflow-hidden">
+                <LuMessageSquareText className="text-xl flex-shrink-0 ml-[0.2rem]" />
+                <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Contact
+                </span>
+              </h1>
             </li>
           </Link>
         </ul>
@@ -81,10 +98,8 @@ const Navbar = () => {
         className="md:hidden right-5 top-5 text-3xl cursor-pointer fixed h-full z-[999]"
         onClick={toggleMenu}
       >
-        {menuOpen ? <IoClose/> : <RxHamburgerMenu />}
+        {menuOpen ? <IoClose /> : <RxHamburgerMenu />}
       </div>
-
-
 
       {menuOpen && (
         <div
@@ -101,8 +116,10 @@ const Navbar = () => {
               onClick={closeMenu}
             >
               <li className="text-[1.2rem] cursor-pointer">
-                <h1 className="h-[3.5rem] px-[12vw] flex items-center justify-start gap-2 rounded-full text-#566068 bg-sky-100 text-start"><TiHomeOutline/><span>Home</span></h1>
-                
+                <h1 className="h-[3.5rem] px-[12vw] flex items-center justify-start gap-2 rounded-full text-#566068 bg-sky-100 text-start">
+                  <TiHomeOutline />
+                  <span>Home</span>
+                </h1>
               </li>
             </Link>
             <Link
@@ -114,8 +131,10 @@ const Navbar = () => {
               onClick={closeMenu}
             >
               <li className="text-[1.2rem] cursor-pointer">
-                <h1 className="h-[3.5rem] px-[12vw]  flex items-center justify-start gap-2 rounded-full text-#566068 bg-sky-100 text-start"><FiUser/><span>About</span></h1>
-                
+                <h1 className="h-[3.5rem] px-[12vw]  flex items-center justify-start gap-2 rounded-full text-#566068 bg-sky-100 text-start">
+                  <FiUser />
+                  <span>About</span>
+                </h1>
               </li>
             </Link>
             <Link
@@ -127,10 +146,11 @@ const Navbar = () => {
               onClick={closeMenu}
             >
               <li className="text-[1.2rem] cursor-pointer">
-                <h1 className="h-[3.5rem] px-[11vw] flex items-center justify-start gap-2 rounded-full text-#566068 bg-sky-100 text-start"><GoProjectSymlink/><span>Projects</span></h1>
-                
+                <h1 className="h-[3.5rem] px-[11vw] flex items-center justify-start gap-2 rounded-full text-#566068 bg-sky-100 text-start">
+                  <GoProjectSymlink />
+                  <span>Projects</span>
+                </h1>
               </li>
-              
             </Link>
             <Link
               to="contact"
@@ -141,10 +161,11 @@ const Navbar = () => {
               onClick={closeMenu}
             >
               <li className="text-[1.2rem] cursor-pointer">
-                <h1 className="h-[3.5rem] px-[11vw] flex items-center justify-start gap-2 rounded-full text-#566068 bg-sky-100 text-start"><LuMessageSquareText/><span>Contact</span></h1>
-                
+                <h1 className="h-[3.5rem] px-[11vw] flex items-center justify-start gap-2 rounded-full text-#566068 bg-sky-100 text-start">
+                  <LuMessageSquareText />
+                  <span>Contact</span>
+                </h1>
               </li>
-            
             </Link>
           </ul>
         </div>
@@ -153,4 +174,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

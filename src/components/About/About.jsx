@@ -33,7 +33,7 @@ const About = () => {
       <div className="flex flex-col gap-5 items-center justify-center lg:flex-row">
 
 
-        <img src={minku} className='h-[500px] mt-10 md:w-[50%]'/>
+        <img src={minku} className='h-[500px] mt-10 md:w-[50%] ml-2'/>
 
 
           <div className="flex w-full h-full items-center justify-center flex-col md:flex-row lg:flex-col">
