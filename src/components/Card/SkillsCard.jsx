@@ -6,7 +6,7 @@ const SkillsCard = ({ skillImage, skillName }) => {
     <div className="h-full w-full relative flex flex-col items-center justify-center">
       <img src={polygon} className="h-[5.5rem]" />
       <div className="absolute top-5 text-5xl">{skillImage}</div>
-      <h3 className="mt-2 text-start">{skillName}</h3>
+      <h3 className="mt-2 text-start text-[#517293]">{skillName}</h3>
     </div>
   );
 };

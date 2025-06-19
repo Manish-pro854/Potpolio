@@ -34,7 +34,7 @@ const Navbar = () => {
             spy={true}
           >
             <li className="group cursor-pointer">
-              <h1 className="flex items-center bg-sky-100 text-[#566068] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
+              <h1 className="flex items-center bg-[#e7e9ef] text-[#565e66] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
                 <TiHomeOutline className="text-xl flex-shrink-0 ml-[0.2rem]" />
                 <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Home
@@ -50,7 +50,7 @@ const Navbar = () => {
             spy={true}
           >
             <li className="group cursor-pointer">
-              <h1 className="flex items-center bg-sky-100 text-[#566068] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
+              <h1 className="flex items-center bg-[#e7e9ef] text-[#565e66] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
                 <FiUser className="text-xl flex-shrink-0 ml-[0.2rem]" />
                 <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   About
@@ -67,7 +67,7 @@ const Navbar = () => {
             spy={true}
           >
             <li className="group cursor-pointer">
-              <h1 className="flex items-center bg-sky-100 text-[#566068] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
+              <h1 className="flex items-center  bg-[#e7e9ef] text-[#565e66] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
                 <GoProjectSymlink className="text-xl flex-shrink-0 ml-[0.2rem]" />
                 <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Projects
@@ -83,7 +83,7 @@ const Navbar = () => {
             spy={true}
           >
             <li className="group cursor-pointer">
-              <h1 className="flex items-center bg-sky-100 text-[#566068] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.3rem] transition-all duration-300 overflow-hidden">
+              <h1 className="flex items-center bg-[#e7e9ef] text-[#565e66] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.3rem] transition-all duration-300 overflow-hidden">
                 <LuMessageSquareText className="text-xl flex-shrink-0 ml-[0.2rem]" />
                 <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Contact

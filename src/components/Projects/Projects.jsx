@@ -12,14 +12,14 @@ const Projects = () => {
       <div className="h-full w-full"></div>
       <div className="h-full w-full">
         <div className="relative">
-        <h1 className="flex items-center justify-center gap-2 text-center pt-15 text-3xl font-[700] text-[#46505b]">
-          <FaGears className="text-4xl" />
-          PROJECTS
-        </h1>
-        <div className="absolute left-[45.4%] w-[7.1rem] h-[1px] bg-[#e5e5e5] mt-4">
-          <span className="h-1 w-10 absolute bg-[#0563bb] left-[33%] -mt-[1.2px]"></span>
-        </div>
-        <p className="text-center pt-8">
+        <h1 className="flex flex-col justify-center items-center pt-15 text-3xl font-[700] text-[#46505a]">
+          
+           <h4 className="flex items-center justify-center gap-2"><FaGears />Projects</h4>
+            <h2 className="flex flex-col justify-center items-center h-[0.2rem] w-[10rem] bg-[#e5d8d8] mt-4 rounded-lg">
+             <h3 className="h-full w-[3.3rem] bg-[#0563bb]"></h3>
+            </h2>
+          </h1>
+        <p className="text-center pt-8 text-[#27282a]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
           soluta!
         </p>

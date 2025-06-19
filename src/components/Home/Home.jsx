@@ -19,14 +19,14 @@ const Home = () => {
          <Navbar/>
 
         <div id="right-side" className="h-full w-full flex flex-col items-center justify-center text-center md:items-start md:-mt-48 lg:-mt-40">
-          <h2 className="text-[3.9rem] font-[font1] font-[800] text-[#46505a]">
+          <h2 className="text-[3.9rem] font-[font1] font-[800] text-[#46505b]">
             Manish
           </h2>
           <h4 className="text-[1.5rem] font-[font1] font-[500] text-[#46505a] mb-3">
             Frontend-focused || CSE Student
           </h4>
           <h3 className="text-[1.8rem] font-[font1] font-[500] text-[#46505a] mb-6">
-            I'm <span className="text-blue-700">
+            I'm <span className="text-[#0763b8]">
                <Typewriter
               words={["React Developer","JavaScript Enthusiast","Frontend Developer"]}
               loop={0}
@@ -39,20 +39,20 @@ const Home = () => {
             </span>
           </h3>
           <ul className="flex gap-5 mb-6">
-            <li className="text-[2rem] bg-transparent text-[#45505a]">
-              <IoLogoLinkedin />
+            <li className="text-[2rem] bg-transparent text-[#46505a]">
+              <IoLogoLinkedin className=" hover:text-[#0d6efd] transition-all duration-400"/>
             </li>
-            <li className="text-[2rem] bg-transparent text-[#45505a]">
-              <FaTwitter />
+            <li className="text-[2rem] bg-transparent text-[#46505a]">
+              <FaTwitter className=" hover:text-[#0d6efd] transition-all duration-400"/>
             </li>
-            <li className="text-[2rem] bg-transparent text-[#45505a]">
-              <FaInstagram />
+            <li className="text-[2rem] bg-transparent text-[#46505a]">
+              <FaInstagram className=" hover:text-[#0d6efd] transition-all duration-400"/>
             </li>
-            <li className="text-[2rem] bg-transparent text-[#45505a]">
-              <FaGithub />
+            <li className="text-[2rem] bg-transparent text-[#46505a]">
+              <FaGithub className=" hover:text-[#0d6efd] transition-all duration-400"/>
             </li>
           </ul>
-          <button className="flex justify-center items-center gap-1 text-[1.5rem] text-white py-2 px-4 bg-[#0d6efd] rounded-lg outline-0">
+          <button className="flex justify-center items-center gap-1 text-[1.5rem] text-[#fcffff] py-2 px-4 bg-[#0d6efd] rounded-lg outline-0 hover:bg-blue-700 transition-all duration-500">
             <IoSearch className="text-[1.7rem]" />
             View Resume
           </button>
