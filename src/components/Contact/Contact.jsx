@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     
 
-    <div id="contact" className="h-full w-full grid gid-col-[5%_95%] font-[font1] mb-6">
+    <div id="contact" className="min-h-screen w-full grid grid-cols-[5%_95%] font-[font1] mb-6 relative z-0">
       <div className="h-full w-full"></div>
       <div className="h-full w-full">
 
@@ -22,7 +22,7 @@ const Contact = () => {
       
 
       <div className="mt-18 flex flex-col gap-10 items-center justify-center md:grid md:grid-cols-2 md:gap-20">
-        <div className="h-full w-full left-side flex items-center justify-center md:ml-30">
+        <div className="h-full w-full left-side flex items-center justify-center md:ml-15">
           <img src={contact} className="w-[80%] md:h-full"/>
         </div>
 

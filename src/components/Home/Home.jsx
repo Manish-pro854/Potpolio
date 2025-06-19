@@ -1,18 +1,11 @@
 import React from "react";
-import "./Home.css";
-import { TiHomeOutline } from "react-icons/ti";
-import { FiUser } from "react-icons/fi";
-import { GoProjectSymlink } from "react-icons/go";
-import { LuMessageSquareText } from "react-icons/lu";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
-import { Link } from "react-scroll";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { IoClose } from "react-icons/io5";
 import { Typewriter } from "react-simple-typewriter";
+import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
   return (
@@ -23,119 +16,7 @@ const Home = () => {
 
       <div className="flex md:gap-45 h-full w-full absolute top-[0%] md:top-[25%]">
 
-         <div id="left-side" className="desktopmenu z-10 hidden md:block ml-4 pt-5">
-              
-                        <ul className="flex flex-col gap-2 items-center justify-center fixed">
-                          <Link
-                            to="home"
-                            smooth={true}
-                            duration={500}
-                            activeClass="active"
-                            spy={true}
-                          >
-                            <li className="text-[1.5rem] p-[1.2rem] rounded-full text-#566068 bg-sky-100 cursor-pointer">
-                              <TiHomeOutline />
-                            </li>
-                          </Link>
-                          <Link
-                            to="about"
-                            smooth={true}
-                            duration={500}
-                            activeClass="active"
-                            spy={true}
-                          >
-                            <li className="text-[1.5rem] p-[1.2rem] rounded-full text-#566068 bg-sky-100 cursor-pointer">
-                              <FiUser />
-                            </li>
-                          </Link>
-                          <Link
-                            to="projects"
-                            smooth={true}
-                            duration={500}
-                            activeClass="active"
-                            spy={true}
-                          >
-                            <li className="text-[1.5rem] p-[1.2rem] rounded-full text-#566068 bg-sky-100 cursor-pointer">
-                              <GoProjectSymlink />
-                            </li>
-                          </Link>
-                          <Link
-                            to="contact"
-                            smooth={true}
-                            duration={500}
-                            activeClass="active"
-                            spy={true}
-                          >
-                            <li className="text-[1.5rem] p-[1.2rem] rounded-full text-#566068 bg-sky-100 cursor-pointer">
-                              <LuMessageSquareText />
-                            </li>
-                          </Link>
-                        </ul>
-                      </div>
-
-
-        
-
-
-        {/* <div className="hamburger">
-          <RxHamburgerMenu />
-        </div>
-
-        <div className="closenav h-full w-full">
-          <IoClose />
-        </div> */}
-
-
-
-        {/* <div id="left-side" className="mobilemenu">
-          <ul className="flex flex-col gap-2 items-center justify-center fixed">
-            <Link
-              to="home"
-              smooth={true}
-              duration={500}
-              activeClass="active"
-              spy={true}
-            >
-              <li className="text-[1.5vw] p-[1.45vw] rounded-full text-#566068 bg-sky-100 cursor-pointer">
-                <TiHomeOutline />
-              </li>
-            </Link>
-            <Link
-              to="about"
-              smooth={true}
-              duration={500}
-              activeClass="active"
-              spy={true}
-            >
-              <li className="text-[1.5vw] p-[1.45vw] rounded-full text-#566068 bg-sky-100 cursor-pointer">
-                <FiUser />
-              </li>
-            </Link>
-            <Link
-              to="projects"
-              smooth={true}
-              duration={500}
-              activeClass="active"
-              spy={true}
-            >
-              <li className="text-[1.5vw] p-[1.45vw] rounded-full text-#566068 bg-sky-100 cursor-pointer">
-                <GoProjectSymlink />
-              </li>
-            </Link>
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
-              activeClass="active"
-              spy={true}
-            >
-              <li className="text-[1.5vw] p-[1.45vw] rounded-full text-#566068 bg-sky-100 cursor-pointer">
-                <LuMessageSquareText />
-              </li>
-            </Link>
-          </ul>
-        </div> */}
-
+         <Navbar/>
 
         <div id="right-side" className="h-full w-full flex flex-col items-center justify-center text-center md:items-start md:-mt-48 lg:-mt-40">
           <h2 className="text-[3.9rem] font-[font1] font-[800] text-[#46505a]">
@@ -184,8 +65,6 @@ const Home = () => {
 };
 
 export default Home;
-
-// Using npm install react-scroll for makig navbar
 
 // for automatic typing effect use library = npm i react-typing-effect
 
