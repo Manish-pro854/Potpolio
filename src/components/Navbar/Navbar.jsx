@@ -7,6 +7,9 @@ import { TiHomeOutline } from "react-icons/ti";
 import { FiUser } from "react-icons/fi";
 import { GoProjectSymlink } from "react-icons/go";
 import { LuMessageSquareText } from "react-icons/lu";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,13 +22,30 @@ const Navbar = () => {
     setMenuOpen(false);
   };
 
+  useGSAP(()=>{
+    let t1 = gsap.timeline()
+    // t1.from("#logo",{
+    //   y:-100,
+    //   duration:1,
+    //   opacity:0
+    // })
+    t1.from(".desktopmenu ul li",{
+      scale:0.2,
+      duration:0.6,
+      opacity:0,
+      stagger:1
+    })
+  })
+
   return (
     <div id="navbar" className="font-[font1]">
+
+
+
       <div
         id="left-side"
-        className="desktopmenu z-10 hidden md:block ml-4 pt-5"
-      >
-        <ul className="flex flex-col gap-2 items-start justify-center fixed">
+        className="desktopmenu z-10 hidden md:block ml-4 pt-5 fixed">
+        <ul className="flex flex-col gap-2 items-start justify-center h-full w-full">
           <Link
             to="home"
             smooth={true}
@@ -34,7 +54,7 @@ const Navbar = () => {
             spy={true}
           >
             <li className="group cursor-pointer">
-              <h1 className="flex items-center bg-[#e7e9ef] text-[#565e66] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
+              <h1 className="flex items-center bg-[#e7e9ef] text-[#565e66] hover:bg-[#0563bb] hover:text-white rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
                 <TiHomeOutline className="text-xl flex-shrink-0 ml-[0.2rem]" />
                 <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Home
@@ -50,7 +70,7 @@ const Navbar = () => {
             spy={true}
           >
             <li className="group cursor-pointer">
-              <h1 className="flex items-center bg-[#e7e9ef] text-[#565e66] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
+              <h1 className="flex items-center bg-[#e7e9ef] text-[#565e66] hover:bg-[#0563bb] hover:text-white rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
                 <FiUser className="text-xl flex-shrink-0 ml-[0.2rem]" />
                 <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   About
@@ -67,7 +87,7 @@ const Navbar = () => {
             spy={true}
           >
             <li className="group cursor-pointer">
-              <h1 className="flex items-center  bg-[#e7e9ef] text-[#565e66] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
+              <h1 className="flex items-center  bg-[#e7e9ef] text-[#565e66] hover:bg-[#0563bb] hover:text-white rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.4rem] transition-all duration-300 overflow-hidden">
                 <GoProjectSymlink className="text-xl flex-shrink-0 ml-[0.2rem]" />
                 <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Projects
@@ -83,7 +103,7 @@ const Navbar = () => {
             spy={true}
           >
             <li className="group cursor-pointer">
-              <h1 className="flex items-center bg-[#e7e9ef] text-[#565e66] rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.3rem] transition-all duration-300 overflow-hidden">
+              <h1 className="flex items-center bg-[#e7e9ef] text-[#565e66] hover:bg-[#0563bb] hover:text-white rounded-full h-[3.6rem] px-4 py-3 w-[3.6rem] group-hover:w-[7.3rem] transition-all duration-300 overflow-hidden">
                 <LuMessageSquareText className="text-xl flex-shrink-0 ml-[0.2rem]" />
                 <span className="ml-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Contact
@@ -93,6 +113,11 @@ const Navbar = () => {
           </Link>
         </ul>
       </div>
+
+
+
+
+
 
       <div
         className="md:hidden right-5 top-5 text-3xl cursor-pointer fixed h-full z-[999]"

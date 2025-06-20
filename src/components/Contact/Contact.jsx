@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="min-h-screen w-full grid grid-cols-[5%_95%] font-[font1] mb-6 relative z-0"
+      className="h-full w-full grid grid-cols-[10%_90%] font-[font1] mb-6 relative z-0"
     >
       <div className="h-full w-full"></div>
       <div className="h-full w-full">
