@@ -7,7 +7,7 @@ import { IoSearch } from "react-icons/io5";
 import { Typewriter } from "react-simple-typewriter";
 import Navbar from "../Navbar/Navbar";
 import { motion } from "motion/react";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.png";
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <div className="relative h-full w-full bg-[url(https://wallpapercave.com/wp/wp9517084.jpg)] bg-cover opacity-[0.2]"></div>
 
       <div className="flex md:gap-45 h-full w-full absolute top-[0%] md:top-[25%]">
-        <div className="absolute">
+        <div className="h-58 fixed -mt-72 w-full z-[2000] bg-[#fff]">
           <img src={logo} className="fixed h-20 md:top-5 left-3"/>
         </div>
         <Navbar />
@@ -25,15 +25,15 @@ const Home = () => {
           className="h-full w-full flex flex-col items-center justify-center text-center md:items-start md:-mt-48 lg:-mt-40 md:-ml-20"
           initial={{
             opacity: 0,
-            scale: 0.2
+            scale: 0.2,
           }}
           animate={{
             opacity: 1,
-            scale: 0.8
+            scale: 0.8,
           }}
           transition={{
             duration: 1.3,
-            delay: 0.1
+            delay: 0.1,
           }}
         >
           <h2 className="text-[5rem] font-[font1] font-[800] text-[#46505b]">
