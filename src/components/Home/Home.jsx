@@ -7,6 +7,7 @@ import { IoSearch } from "react-icons/io5";
 import { Typewriter } from "react-simple-typewriter";
 import Navbar from "../Navbar/Navbar";
 import { motion } from "motion/react";
+import logo from "../../assets/logo.png"
 
 const Home = () => {
   return (
@@ -14,6 +15,9 @@ const Home = () => {
       <div className="relative h-full w-full bg-[url(https://wallpapercave.com/wp/wp9517084.jpg)] bg-cover opacity-[0.2]"></div>
 
       <div className="flex md:gap-45 h-full w-full absolute top-[0%] md:top-[25%]">
+        <div className="absolute">
+          <img src={logo} className="fixed h-20 md:top-5 left-3"/>
+        </div>
         <Navbar />
 
         <motion.div

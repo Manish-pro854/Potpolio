@@ -38,8 +38,7 @@ const Navbar = () => {
   })
 
   return (
-    <div id="navbar" className="font-[font1]">
-
+    <div id="navbar" className="font-[font1] relative">
 
 
       <div
