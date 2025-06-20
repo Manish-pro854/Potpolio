@@ -31,9 +31,9 @@ const Navbar = () => {
     // })
     t1.from(".desktopmenu ul li",{
       scale:0.2,
-      duration:0.6,
+      duration:0.4,
       opacity:0,
-      stagger:1
+      stagger:1,
     })
   })
 

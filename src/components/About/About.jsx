@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import minku from "../../assets/MINKU.jpg";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -7,26 +7,20 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import SkillsCard from "../Card/SkillsCard";
-import { motion } from "motion/react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { motion, useInView } from "motion/react";
 
 const About = () => {
-
-  useGSAP(()=>{
-    let t2 = gsap.timeline()
-    t2.from("#about",{
-      y:50,
-      duration:1,
-      opacity:0
-    })
-  })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true }); // once: true = only animates once
 
   return (
     <motion.div
       id="about"
       className="h-full w-full grid grid-cols-1 md:grid-cols-[10%_90%] font-[font1]"
-      
+      ref={ref}
+      initial={{ opacity: 0, y: 70 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, delay: 0.5 }}
     >
       <div id="nav" className="h-secreen w-0 md:w-full"></div>
 
@@ -53,12 +47,20 @@ const About = () => {
         </div>
 
         <div className="flex flex-col gap-5 items-center justify-center lg:flex-row">
-          <img
+          <motion.img
             src={minku}
             className="h-[500px] mt-10 md:w-[50%] ml-2 rounded-md"
+            initial={{ x: -100, opacity: 0 }}
+            animate={isInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.3 }}
           />
 
-          <div className="flex w-full h-full items-center justify-center flex-col md:flex-row lg:flex-col">
+          <motion.div
+            className="flex w-full h-full items-center justify-center flex-col md:flex-row lg:flex-col"
+            initial={{ x: 100, opacity: 0 }}
+            animate={isInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
             <div className="md:w-[60%] lg:w-full text-[#728394]">
               <h1 className="text-3xl font-[500] text-center lg:text-start lg:mt-6">
                 React and Frontend Developer
@@ -78,30 +80,75 @@ const About = () => {
                 </h2>
               </h1>
               <div className="grid gap-10 md:gap-2 grid-cols-2 lg:grid-cols-3 lg:gap-10 mt-6">
-                <SkillsCard
-                  skillImage={<FaReact className="text-[#02d0f8]" />}
-                  skillName="REACT"
-                />
-                <SkillsCard
-                  skillImage={<TbBrandJavascript className="text-[#f2ab3e]" />}
-                  skillName="JavaScript"
-                />
-                <SkillsCard
-                  skillImage={<RiTailwindCssFill className="text-[#687fef]" />}
-                  skillName="Tailwind CSS"
-                />
-                <SkillsCard skillImage={<FaGithub />} skillName="GitHub" />
-                <SkillsCard
-                  skillImage={<FaCss3Alt className="text-[#016bb4]" />}
-                  skillName="CSS"
-                />
-                <SkillsCard
-                  skillImage={<FaHtml5 className="text-[#de4a25]" />}
-                  skillName="HTML"
-                />
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ duration: 0.6, delay: 1 }}
+                >
+                  <SkillsCard
+                    skillImage={<FaReact className="text-[#02d0f8]" />}
+                    skillName="REACT"
+                  />
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ duration: 0.6, delay: 1 }}
+                >
+                  <SkillsCard
+                    skillImage={
+                      <TbBrandJavascript className="text-[#f2ab3e]" />
+                    }
+                    skillName="JavaScript"
+                  />
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ duration: 0.6, delay: 1 }}
+                >
+                  <SkillsCard
+                    skillImage={
+                      <RiTailwindCssFill className="text-[#687fef]" />
+                    }
+                    skillName="Tailwind CSS"
+                  />
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ duration: 0.6, delay: 1 }}
+                >
+                  <SkillsCard skillImage={<FaGithub />} skillName="GitHub" />
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ duration: 0.6, delay: 1 }}
+                >
+                  <SkillsCard
+                    skillImage={<FaCss3Alt className="text-[#016bb4]" />}
+                    skillName="CSS"
+                  />
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ duration: 0.6, delay: 1 }}
+                >
+                  <SkillsCard
+                    skillImage={<FaHtml5 className="text-[#de4a25]" />}
+                    skillName="HTML"
+                  />
+                </motion.div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.div>

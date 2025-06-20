@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const ProjectCard = ({ image, title, discription, link }) => {
