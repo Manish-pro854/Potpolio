@@ -130,7 +130,7 @@ const Navbar = () => {
           className="mobilemenu md:hidden z-30 h-screen min-w-[60%] bg-white flex items-center justify-center fixed"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
+          transition={{ duration: 0.8 }}
         >
           <ul className="flex flex-col gap-2 items-center justify-center">
             <Link
