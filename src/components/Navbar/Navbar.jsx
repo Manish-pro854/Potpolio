@@ -10,6 +10,7 @@ import { LuMessageSquareText } from "react-icons/lu";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import logo from "../../assets/logo.png";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,11 +25,11 @@ const Navbar = () => {
 
   useGSAP(() => {
     let t1 = gsap.timeline();
-    t1.from("#logo",{
-      y:-100,
-      duration:1,
-      opacity:0
-    })
+    t1.from("#logo", {
+      y: -100,
+      duration: 1,
+      opacity: 0,
+    });
     t1.from(".desktopmenu ul li", {
       scale: 0.2,
       duration: 0.4,
@@ -39,7 +40,6 @@ const Navbar = () => {
 
   return (
     <div id="navbar" className="font-[font1] relative">
-
       <div className="h-54 fixed -mt-72 w-full z-[2000]"></div>
       <div className="fixed top-0 z-[3000] bg-transparent backdrop-blur-md w-full h-22">
         <img id="logo" src={logo} className="h-24 -mt-1" />
@@ -121,16 +121,17 @@ const Navbar = () => {
         className="md:hidden right-5 top-5 text-3xl cursor-pointer fixed h-full z-[3000]"
         onClick={toggleMenu}
       >
-        {menuOpen ? <IoClose /> : <RxHamburgerMenu/>}
+        {menuOpen ? <IoClose /> : <RxHamburgerMenu />}
       </div>
 
       {menuOpen && (
-        <div
+        <motion.div
           id="left-side"
-          className="mobilemenu md:hidden z-30 h-screen min-w-[40%] bg-white flex items-center justify-center fixed"
+          className="mobilemenu md:hidden z-30 h-screen min-w-[60%] bg-white flex items-center justify-center fixed"
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
         >
-        
-
           <ul className="flex flex-col gap-2 items-center justify-center">
             <Link
               to="home"
@@ -193,7 +194,7 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-        </div>
+        </motion.div>
       )}
     </div>
   );

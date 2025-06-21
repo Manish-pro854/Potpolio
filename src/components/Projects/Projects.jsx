@@ -39,8 +39,8 @@ const Projects = () => {
 
         <div className="flex flex-row flex-wrap items-center justify-center gap-10 mt-8 py-6">
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            animate={isInView ? { x: 0, opacity: 1 } : {}}
+            initial={{ y: -80, opacity: 0 }}
+            animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 1, delay: 0.2 }}
             whileHover={{
               scale: 1.1,
@@ -73,8 +73,8 @@ const Projects = () => {
           </motion.div>
 
           <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            animate={isInView ? { x: 0, opacity: 1 } : {}}
+            initial={{ y: 80, opacity: 0 }}
+            animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 1, delay: 0.6 }}
             whileHover={{
               scale: 1.1,

@@ -46,10 +46,10 @@ const About = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-5 items-center justify-center lg:flex-row">
+        <div className="flex flex-col gap-5 items-center justify-center lg:flex-row px-4 md:px-0">
           <motion.img
             src={minku}
-            className="h-[500px] mt-10 md:w-[50%] ml-2 rounded-md"
+            className="h-[500px] mt-10 md:w-[50%] md:ml-2 rounded-md"
             initial={{ x: -100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -113,7 +113,7 @@ const About = () => {
                     skillImage={
                       <RiTailwindCssFill className="text-[#687fef]" />
                     }
-                    skillName="Tailwind CSS"
+                    skillName="Tailwind CSS" 
                   />
                 </motion.div>
 

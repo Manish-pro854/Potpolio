@@ -12,7 +12,7 @@ const Contact = () => {
       id="contact"
       className="h-full w-full grid grid-cols-[6%_94%] font-[font1] mb-6 relative z-0"
       ref={ref}
-      initial={{ opacity: 0, y: 70 }}
+      initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay: 0.5 }}
     >
@@ -29,8 +29,8 @@ const Contact = () => {
           <div className="mt-18 flex flex-col gap-10 items-center justify-center md:grid md:grid-cols-2 md:gap-10">
             <motion.div
               className="h-full w-full left-side flex items-center justify-center"
-              initial={{ x: -100, opacity: 0 }}
-              animate={isInView ? { x: 0, opacity: 1 } : {}}
+              initial={{ y: -80, opacity: 0 }}
+              animate={isInView ? { y: 0, opacity: 1 } : {}}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <img src={contact} className="w-[80%] md:h-full" />
@@ -38,8 +38,8 @@ const Contact = () => {
 
             <motion.div
               className="right-side md:mr-5 md:-ml-4"
-              initial={{ x: 100, opacity: 0 }}
-              animate={isInView ? { x: 0, opacity: 1 } : {}}
+              initial={{ y: 80, opacity: 0 }}
+              animate={isInView ? { y: 0, opacity: 1 } : {}}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <form
