@@ -31,9 +31,8 @@ const Projects = () => {
               <h3 className="h-full w-[3.3rem] bg-[#0563bb]"></h3>
             </h2>
           </h1>
-          <p className="text-center pt-8 text-[#27282a]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
-            soluta!
+          <p className="text-center pt-8 text-[#27282a] pr-3 text-xl font-[400] md:px-9">
+            A Collection of Responsive and Interactive Web Applications Built Using React, Tailwind CSS, and Modern Frontend Tools.
           </p>
         </div>
 

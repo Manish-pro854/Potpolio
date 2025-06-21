@@ -8,14 +8,12 @@ import { Typewriter } from "react-simple-typewriter";
 import Navbar from "../Navbar/Navbar";
 import { motion } from "motion/react";
 
-
 const Home = () => {
   return (
     <div id="home" className="h-screen w-full font-[font1]">
       <div className="relative h-full w-full bg-[url(https://wallpapercave.com/wp/wp9517084.jpg)] bg-cover opacity-[0.2]"></div>
 
       <div className="flex md:gap-45 h-full w-full absolute top-[0%] md:top-[25%]">
-  
         <Navbar />
 
         <motion.div
@@ -60,16 +58,40 @@ const Home = () => {
           </h3>
           <ul className="flex gap-5 mb-6">
             <li className="text-[2rem] bg-transparent text-[#46505a]">
-              <IoLogoLinkedin className=" hover:text-[#0d6efd] transition-all duration-400" />
+              <a
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IoLogoLinkedin className="hover:text-[#0d6efd] transition-all duration-400" />
+              </a>
             </li>
             <li className="text-[2rem] bg-transparent text-[#46505a]">
-              <FaTwitter className=" hover:text-[#0d6efd] transition-all duration-400" />
+              <a
+                href="https://twitter.com/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter className="hover:text-[#0d6efd] transition-all duration-400" />
+              </a>
             </li>
             <li className="text-[2rem] bg-transparent text-[#46505a]">
-              <FaInstagram className=" hover:text-[#0d6efd] transition-all duration-400" />
+              <a
+                href="https://instagram.com/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="hover:text-[#0d6efd] transition-all duration-400" />
+              </a>
             </li>
             <li className="text-[2rem] bg-transparent text-[#46505a]">
-              <FaGithub className=" hover:text-[#0d6efd] transition-all duration-400" />
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="hover:text-[#0d6efd] transition-all duration-400" />
+              </a>
             </li>
           </ul>
           <button className="flex justify-center items-center gap-1 text-[1.5rem] text-[#fcffff] py-2 px-4 bg-[#0d6efd] rounded-lg outline-0 hover:bg-blue-700 transition-all duration-500">

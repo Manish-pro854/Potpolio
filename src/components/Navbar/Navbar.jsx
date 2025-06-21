@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <div id="navbar" className="font-[font1] relative">
       <div className="h-54 fixed -mt-72 w-full z-[2000]"></div>
-      <div className="fixed top-0 z-[3000] bg-transparent backdrop-blur-md w-full h-22">
+      <div className="fixed top-0 z-[3000] bg-transparent backdrop-blur-md w-full h-16">
         <img id="logo" src={logo} className="h-24 -mt-1" />
       </div>
 

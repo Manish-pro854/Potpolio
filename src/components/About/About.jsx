@@ -34,15 +34,12 @@ const About = () => {
           </h1>
         </div>
 
-        <div className="mt-8 text-center ml-2 pr-4 text-[#27282a]">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
-            temporibus! Lorem ipsum dolor sit amet consectetur adipisicing.
+        <div className="mt-8 text-center px-3 text-[#27282a]">
+          <p className="pb-2">
+            I’m a final-year B.Tech Computer Science student with a strong interest in frontend development, specializing in building clean, scalable, and responsive user interfaces using modern technologies.
           </p>
           <p className="-mx-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-            nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Alias, laborum?
+            Beyond my technical interests, I genuinely enjoy meeting new people, building meaningful friendships, and believe that collaboration and strong personal connections are key to both personal and professional growth.
           </p>
         </div>
 
@@ -63,12 +60,10 @@ const About = () => {
           >
             <div className="md:w-[60%] lg:w-full text-[#728394]">
               <h1 className="text-3xl font-[500] text-center lg:text-start lg:mt-6">
-                React and Frontend Developer
+                Frontend Developer - React & Tailwind CSS
               </h1>
               <p className="text-[1.4rem] font-[500] text-center lg:text-start text-[#27282a]">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
-                minus accusantium doloribus itaque? Voluptatem id quas
-                consectetur, architecto molestiae nostrum?
+                Skilled in building responsive and dynamic web interfaces using React, JavaScript, Tailwind CSS, HTML, and CSS, with version control managed through GitHub.
               </p>
             </div>
 
