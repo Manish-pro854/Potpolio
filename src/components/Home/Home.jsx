@@ -57,7 +57,7 @@ const Home = () => {
             </span>
           </h3>
           <ul className="flex gap-7 mb-7">
-            <li className="text-[2.2rem] bg-transparent text-[#46505a]">
+            <li className="text-[2.2rem] bg-transparent text-[#46505a] outline-none">
               <a
                 href="https://www.linkedin.com/in/manish-ahlawat-16514925a"
                 target="_blank"
@@ -66,7 +66,7 @@ const Home = () => {
                 <IoLogoLinkedin className="hover:text-[#0d6efd] transition-all duration-400" />
               </a>
             </li>
-            <li className="text-[2.2rem] bg-transparent text-[#46505a]">
+            <li className="text-[2.2rem] bg-transparent text-[#46505a] outline-none">
               <a
                 href="https://x.com/ManishSoftEngg"
                 target="_blank"
@@ -75,7 +75,7 @@ const Home = () => {
                 <FaTwitter className="hover:text-[#0d6efd] transition-all duration-400" />
               </a>
             </li>
-            <li className="text-[2.2rem] bg-transparent text-[#46505a]">
+            <li className="text-[2.2rem] bg-transparent text-[#46505a] outline-none">
               <a
                 href="https://www.instagram.com/minku_ahlawat/"
                 target="_blank"
@@ -84,7 +84,7 @@ const Home = () => {
                 <FaInstagram className="hover:text-[#0d6efd] transition-all duration-400" />
               </a>
             </li>
-            <li className="text-[2.2rem] bg-transparent text-[#46505a]">
+            <li className="text-[2.2rem] bg-transparent text-[#46505a] outline-none">
               <a
                 href="https://github.com/Manish-pro854"
                 target="_blank"

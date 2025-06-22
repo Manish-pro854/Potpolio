@@ -19,7 +19,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
+            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500  outline-none">
               <FaLinkedinIn />
             </li>
           </a>
@@ -28,7 +28,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
+            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500 outline-none">
               <FaGithub />
             </li>
           </a>
@@ -37,7 +37,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
+            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500 outline-none">
               <FaInstagram />
             </li>
           </a>
@@ -46,7 +46,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
+            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500 outline-none">
               <FaTwitter />
             </li>
           </a>
