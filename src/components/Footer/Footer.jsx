@@ -14,18 +14,42 @@ const Footer = () => {
           about me by connecting with me on any of the social media platform.
         </p>
         <ul className="flex gap-4 items-center justify-center mt-8">
-          <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
-            <FaLinkedinIn />
-          </li>
-          <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
-            <FaGithub />
-          </li>
-          <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
-            <FaInstagram />
-          </li>
-          <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
-            <FaTwitter />
-          </li>
+          <a
+            href="https://www.linkedin.com/in/manish-ahlawat-16514925a"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
+              <FaLinkedinIn />
+            </li>
+          </a>
+          <a
+            href="https://github.com/Manish-pro854"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
+              <FaGithub />
+            </li>
+          </a>
+          <a
+            href="https://www.instagram.com/minku_ahlawat/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
+              <FaInstagram />
+            </li>
+          </a>
+          <a
+            href="https://x.com/ManishSoftEngg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="text-[1rem] text-white p-3 rounded-full bg-[#0563bc] hover:bg-blue-500 transition-all duration-500">
+              <FaTwitter />
+            </li>
+          </a>
         </ul>
         <h2 className="text-[0.9rem] font-[400] text-[#46505b] mt-6 pb-8">
           © Copyright <span className="font-[700]">MyResume.</span>
