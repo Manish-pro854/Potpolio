@@ -74,7 +74,7 @@ const About = () => {
                   <h3 className="h-full w-[2.2rem] bg-[#0563bb]"></h3>
                 </h2>
               </h1>
-              <div className="grid gap-10 md:gap-2 grid-cols-2 lg:grid-cols-3 lg:gap-10 mt-6">
+              <div className="grid gap-10 md:gap-2 grid-cols-2 lg:grid-cols-3 lg:gap-10 mt-6 -mx-3 md:-mx-0">
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={isInView ? { opacity: 1 } : {}}
