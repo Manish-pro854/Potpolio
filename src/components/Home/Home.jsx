@@ -94,10 +94,12 @@ const Home = () => {
               </a>
             </li>
           </ul>
-          <button className="flex justify-center items-center gap-1 text-[1.5rem] text-[#fcffff] py-2 px-4 bg-[#0d6efd] rounded-lg outline-0 hover:bg-blue-700 transition-all duration-500">
-            <IoSearch className="text-[1.7rem]" />
-            View Resume
-          </button>
+          <a href="/Manish_resume.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="flex justify-center items-center gap-1 text-[1.5rem] text-[#fcffff] py-2 px-4 bg-[#0d6efd] rounded-lg outline-0 hover:bg-blue-700 transition-all duration-500 cursor-pointer">
+              <IoSearch className="text-[1.7rem]" />
+              View Resume
+            </button>
+          </a>
         </motion.div>
       </div>
     </div>

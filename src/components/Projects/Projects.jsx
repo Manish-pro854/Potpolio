@@ -32,7 +32,8 @@ const Projects = () => {
             </h2>
           </h1>
           <p className="text-center pt-8 text-[#27282a] pr-3 text-xl font-[400] md:px-9">
-            A Collection of Responsive and Interactive Web Applications Built Using React, Tailwind CSS, and Modern Frontend Tools.
+            A Collection of Responsive and Interactive Web Applications Built
+            Using React, Tailwind CSS, and Modern Frontend Tools.
           </p>
         </div>
 
@@ -48,9 +49,9 @@ const Projects = () => {
           >
             <ProjectCard
               image={image1}
-              title="Social Media"
-              discription="Made a social media manager template using REACT"
-              link="http://manishportpolio.netlify.app"
+              title="HelpMe"
+              discription="Connecting helpers with those who need them"
+              link="http://help-mee.netlify.app"
             />
           </motion.div>
 
@@ -65,9 +66,9 @@ const Projects = () => {
           >
             <ProjectCard
               image={image2}
-              title="Property Manager"
-              discription="Made a property manager site using REACT"
-              link="http://minkuprivateproperty.netlify.app"
+              title="Everything Mall"
+              discription="A full mall experience in one sleek web app"
+              link="http://everything-mall.netlify.app"
             />
           </motion.div>
 
@@ -82,9 +83,9 @@ const Projects = () => {
           >
             <ProjectCard
               image={image3}
-              title="E-commerce Store"
-              discription="Created an e-commerce site using REACT"
-              link="http://minku-ecommerse-store.netlify.app"
+              title="Ixigo Clone"
+              discription="Responsive ixigo clone with flights and interactive UI"
+              link="https://tinyurl.com/396buewk"
             />
           </motion.div>
         </div>

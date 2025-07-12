@@ -65,7 +65,7 @@ const Contact = () => {
                   id="textarea"
                   placeholder="Describe what you're looking to build..."
                 ></textarea>
-                <button className="col-span-2 flex gap-2 items-center justify-center px-4 py-3 rounded-md text-white font-[500] text-lg bg-[#0563bb] hover:bg-blue-500 transition-all duration-600">
+                <button className="col-span-2 flex gap-2 items-center justify-center px-4 py-3 rounded-md text-white font-[500] text-lg bg-[#0563bb] hover:bg-blue-500 transition-all duration-600 cursor-pointer">
                   Send Message{" "}
                   <IoIosSend className="text-white text-[1.4rem]" />
                 </button>
